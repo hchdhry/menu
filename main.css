@@ -1,3 +1,50 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Snell Roundhand, cursive;
+    
+  }
+  
+
+
 .header{
-    background-color: aquamarine;
+    background-color: black;
+    color: rgb(245, 209, 178);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+   
+
+}
+
+
+.body{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-image:url(food.jpg);
+    background-position: center;   
+    background-size: cover;
+    color: rgb(22, 22, 20);
+    font-size: 30px;
+
+}
+.menu,.home{
+    margin-left: 100px;
+    margin-bottom: 30px;
+    height: 5vh;
+    width: 10%;
+    background-color: blanchedalmond;
+    border-radius: 3px;
+}
+
+.home{
+    order: -1;
+}
+
+button:hover{
+    color: blanchedalmond;
+    background-color: black;
 }
