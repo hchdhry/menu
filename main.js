@@ -2,6 +2,8 @@ const content= document.querySelector("#content")
 
 
 
+
+
 const header=document.createElement("div")
 header.classList.add("header")
 content.appendChild(header)
@@ -26,6 +28,14 @@ const home = document.createElement("button")
 home.classList.add("home")
 header.appendChild(home)
 home.textContent="HÔMĖ"
+
+function clear(){
+while (content.firstChild) {
+    content.removeChild(content.firstChild);
+}
+}
+
+export { clear };
 
 
 
