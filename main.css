@@ -24,7 +24,7 @@ html, body {
     display: flex;
     justify-content: center;
     height: 100vh;
-    background-image:url(food.jpg);
+   
     background-position: center;   
     background-size: cover;
     color: rgb(22, 22, 20);
@@ -48,3 +48,6 @@ button:hover{
     color: blanchedalmond;
     background-color: black;
 }
+
+
+  

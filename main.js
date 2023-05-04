@@ -9,7 +9,7 @@ header.innerText="welcome to the restruant"
 const body=document.createElement("div")
 body.classList.add("body")
 content.appendChild(body)
-
+body.style.backgroundImage = "url('/Users/hassan/TOP/intermediate/menu/food.jpg')";
 
 const yee=document.createElement("div")
 yee.classList.add("yee")
@@ -27,14 +27,46 @@ header.appendChild(home)
 home.textContent="HÔMĖ"
 }
 
+function menu(){
+    clear()
+   
+    const content= document.querySelector("#content")
+    const header=document.createElement("div")
+    header.classList.add("header")
+    content.appendChild(header)
+    header.innerText="welcome to the restruant"
+  
+    const body=document.createElement("div")
+    body.classList.add("body")
+    content.appendChild(body)
+    body.style.backgroundImage = "url('/Users/hassan/TOP/intermediate/menu/menu.jpg')";
+
+    const menu = document.createElement("button")
+    menu.classList.add("menu")
+    header.appendChild(menu)
+    menu.textContent="LÀ MENU"
+    
+    const home = document.createElement("button")
+    home.classList.add("home")
+    header.appendChild(home)
+    home.textContent="HÔMĖ"
+    
+    }
+    
+    
+
 function clear(){
     while (content.firstChild) {
         content.removeChild(content.firstChild);
     }
     }
     
+
   
-create()
+
+menu()
+
+
 
 
 
